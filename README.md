@@ -1,8 +1,20 @@
-# Trigger_Word_Detection
-Constructing an audio dataset (using synthesis) and implementing an algorithm for trigger detection
+## 📌 Project Overview
 
-This is a personal project from DeepLearning.AI's [Deep Learning Specialization](https://www.deeplearning.ai/courses/deep-learning-specialization/) Course#5: Sequence Models. There's essentially two steps:
-- Synthesizing audio
-- Training a model to recognize trigger words in audio
+The system performs **trigger word detection**, similar to "Hey Siri" or "OK Google." It involves two main phases:
 
-Here's the link to the [XY_train](https://drive.google.com/drive/folders/18FOdz6mlofD-Nz20ol6HyssO36-8xYmZ?usp=share_link) folder and the [XY_dev](https://drive.google.com/drive/folders/1VFhiiwMfXm7Kj6OOklDAoASqj9pcZnPE?usp=share_link) folder required for the project.
+1. **🔊 Audio Synthesis**  
+   - Generates a synthetic dataset by inserting trigger words (e.g., "activate") into background audio  
+   - Produces training and dev sets with labeled audio examples
+
+2. **🧠 Model Training**  
+   - A neural network model (based on RNNs) is trained to detect the trigger word's presence and position in audio clips  
+   - Outputs a chime or signal when the word is detected
+
+## 📁 Required Data
+
+Download the training and dev sets before running the code:
+
+- [XY_train.zip](https://drive.google.com/drive/folders/18FOdz6mlofD-Nz20ol6HyssO36-8xYmZ?usp=share_link)  
+- [XY_dev.zip](https://drive.google.com/drive/folders/1VFhiiwMfXm7Kj6OOklDAoASqj9pcZnPE?usp=share_link)
+
+> Unzip both folders and place them in the project directory.
